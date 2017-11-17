@@ -8,5 +8,4 @@ var Globals = {
     'DEFAULT_RADIUS': 2000
 }
 
-
 module.exports = Globals;
