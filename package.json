@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
@@ -15,6 +17,8 @@
     "jsonwebtoken": "^8.1.0",
     "mysql": "^2.13.0",
     "password-hash": "^1.2.2",
-    "request": "2.79.0"
-  }
+    "request": "2.79.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
